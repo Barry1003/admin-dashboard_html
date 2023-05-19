@@ -553,6 +553,50 @@ main .recent a{
     FONT-WEIGHT: 500  ;
 }
 
+@media screen and (max-width:1200px) {
+    .container{
+        width: 94%; 
+        grid-template-columns: 7rem auto  23rem;
+    }
+
+    .logo-title{
+        display : none;
+    }
+    aside .sidebar h3{
+        display: none ;
+    }
+
+    .aside .sidebar a{
+        width: 5.6rem; 
+    }
+
+    aside .asidebar a:last-child{
+        position: relative;
+        gap: 0;
+    }
+
+    main .insight{
+        grid-template-columns: 1fr;
+        gap :0;
+    }
+    
+    main .recent-orders{
+        width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 2rem 0 0 0.8rem;
+    }
+
+    main .recent-orders table{
+        width: 83vw;
+
+    }
+    main .recent-orders table tbody tr th:last-child, main .recent-orders table tbody tr th:first-child
+    {
+        display: none ;
+    }
+}
 
 
 
@@ -586,7 +630,6 @@ main .recent a{
     {
         display: none ;
     }
-}
 
 
 @media screen and (max-width:760px){
