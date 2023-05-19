@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root{
@@ -554,18 +554,7 @@ main .recent a{
 }
 
 
-@media screen and (max-width:1200px) {
-    .container{
-        width: 94%; 
-        grid-template-columns: 7rem auto  23rem;
-    }
 
-    .logo-title{
-        display : none;
-    }
-    aside .sidebar h3{
-        display: none ;
-    }
 
     .aside .sidebar a{
         width: 5.6rem; 
