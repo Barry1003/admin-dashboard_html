@@ -6,7 +6,7 @@
     --color-daanger:#db3341 ;
     --color-sucess: #41f1b6;
     --color-warming: #ffbb55;
-    --coloe-white: rgb(241, 236, 236);
+    --color-white: rgb(241, 236, 236);
     --color-info-light: rgb(229, 244, 247);
     --color-info-dark:rgba(62, 64, 68, 0.904);
     --color-dark: black;
@@ -28,6 +28,20 @@
     --font-family-2: 'Poppins', sans-serif;
     --font-family-1:'Lobster', cursive;
 }
+
+
+/*dark theme variables*/
+
+.dark-theme-variables{
+    --color-background:#181a1e;
+    --color-white:#202328;
+    --color-dark: #edeffd ;
+    --color-dark-variant: #a3bdcc;
+    --color-light: black;
+    --box-shadow:0 2rem 3rem var(--color-light);
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -47,7 +61,7 @@ body{
     height: 100vh;
     font-family:  var(--font-family-2) ;
     font-size: 0.88rem;
-    background: var(--color-back-ground);
+    background: var(--color-white);
     user-select: none;
     overflow-x: hidden;
     color: var(--color-dark);
@@ -64,7 +78,7 @@ aside{
     
 }
 aside .top{
-    background: white;
+    background: var(--color-white);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,7 +105,7 @@ aside .sidebar{
 }
 
 aside h3{
-    font-weight: 500;
+    font-weight: 800;
 }
 
 aside .sidebar a{
@@ -169,7 +183,7 @@ h2{
     font-size: 1.4rem;
 }
 h3{
-    font-size: 0.67rem;
+    font-size: 0.7rem;
 }
 
 h4{
@@ -250,7 +264,7 @@ main .insight{
 }
 
 main .insight > div{
-    background: var(--coloe-white);
+    background: var(--color-white);
     padding: var(--card-padding);
     margin-top: 1rem;
     box-shadow: var(--box-shadow);
@@ -266,7 +280,7 @@ main .insight > div span{
     border-radius: 50%;
     background: var(--color-primary);
     font-size: 2rem;
-    color: var(--coloe-white);
+    color: var(--color-white);
 }
 
 
@@ -356,7 +370,7 @@ main .recent h2{
 
 
 main .recent table{
-    background: var(--coloe-white);
+    background: var(--color-white);
     width: 100%;
     border-radius: var(--card-border);
     padding: var(--card-padding);
@@ -452,7 +466,7 @@ main .recent a{
 
 
 .right .R-update .updates{
-    background: var(--coloe-white);
+    background: var(--color-white);
     padding: var(--card-padding);
     border-radius:  15% ;
      box-shadow: var(--box-shadow);
@@ -472,7 +486,7 @@ main .recent a{
 }
 
 .right .sales-analytics .item{
-    background: var(--coloe-white);
+    background: var(--color-white);
     display: flex;
     align-items:center;
     gap: 2rem;
@@ -505,7 +519,7 @@ main .recent a{
 
 .right .sales-analytics .item .icon{
     padding:0.5rem;
-    color:  var(--coloe-white);
+    color:  var(--color-white);
     border-radius: 50%;
     background: var(--color-primary);
     display: flex ;
@@ -594,14 +608,22 @@ main .recent a{
 
     aside{
         position:fixed ;
-        left: 0;
-        background: var(--coloe-white);
+        left: -100%;
+        background: var(--color-white);
         width:18rem;
         z-index: 3 ;
         padding-right: var(--card-padding);
         box-shadow: 1rem 3rem 4rem var(--color-light);
-        display :none;
+        display :block;
+        animation: showMenu 400ms ease forwards;
     }
+    
+    @keyframes showMenu {
+        to {
+            left: 0;
+        }
+    }
+
 
     aside .logo{
         margin-left:1rem ;
@@ -652,7 +674,7 @@ padding: 0 1rem ;
         right: 0;
         align-items:center;
         height: 4.6rem;
-        background:  var(--coloe-white);
+        background:  transparent;
         margin: 0;
         z-index: 2;
         box-shadow:0 1em 1rem  var(--color-light);
@@ -682,70 +704,3 @@ padding: 0 1rem ;
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
