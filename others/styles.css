@@ -680,7 +680,7 @@ main .recent a{
         margin: 0;
         z-index: 2;
         box-shadow:0 1em 1rem  var(--color-light);
-        width: 26.6rem;
+        width: 100%;
     }
 
     .right .top .theme-toggler{
